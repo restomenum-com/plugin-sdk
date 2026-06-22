@@ -1,0 +1,6 @@
+node_modules
+dist
+*.tsbuildinfo
+
+# İç talimat — public plugin-sdk repo'suna GİTMEZ (developer-portal kaynağında kalır)
+CLAUDE.md

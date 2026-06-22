@@ -1,0 +1,34 @@
+{
+  "name": "@restomenum/plugin-sdk",
+  "version": "1.4.0",
+  "description": "Restomenum eklenti platformu için resmi geliştirici SDK'sı — webhook imza doğrulama, OAuth token exchange, Callback API istemcisi, event/scope katalogu, tipler.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" }
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["restomenum", "plugin", "webhook", "sdk", "pos", "restaurant"],
+  "license": "MIT",
+  "homepage": "https://dev.restomenum.com/docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restomenum-com/plugin-sdk.git"
+  },
+  "bugs": { "url": "https://dev.restomenum.com/docs" },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.41",
+    "typescript": "^5.5.3"
+  }
+}

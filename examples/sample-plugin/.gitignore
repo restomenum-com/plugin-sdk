@@ -1,0 +1,10 @@
+node_modules
+.env
+.env.*
+!.env.example
+
+# test:api'nin yakaladığı gerçek API yanıtları (mağaza verisi / PII içerebilir) — ASLA commit/publish edilmez
+test/responses/
+
+# İç talimat — public sample-plugin repo'suna GİTMEZ (developer-portal kaynağında kalır)
+CLAUDE.md
